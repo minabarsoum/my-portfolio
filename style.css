@@ -1,0 +1,64 @@
+.gradient-background {
+    background: linear-gradient(300deg, #f9faf9, #ffffff, #d267ca);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+.nav-link {
+    /* Default navbar link color */
+    color: #444;
+    /* Smooth color change */
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    /* Hover color to match hero theme */
+    color: #8b6cff;
+}
+
+.nav-link.active {
+    /* Purple pill background for active page */
+    background-color: #8b6cff;
+    /* White text on active pill */
+    color: #fff !important;
+    /* Rounded pill shape */
+    border-radius: 999px;
+    /* Extra padding so pill looks like a button */
+    padding-inline: 1.25rem;
+}
+
+.hero-img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+.btn-primary-custom {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-image: linear-gradient(90deg, #d46aff, #8b6cff);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.btn-secondary-custom {
+    background-color: #0A66C2;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-image: linear-gradient(90deg, #0A66C2, #8b6cff);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
