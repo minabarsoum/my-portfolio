@@ -3,36 +3,40 @@
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 }
-.welcome-text {
-    font-size: 2.5rem;
-    font-weight: 400;
-    letter-spacing: 0.2px;
+.section-pill {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #3b82f6 0%, rgba(59, 130, 246, 0.6) 40%, rgba(59, 130, 246, 0) 100%);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
 }
+
+.nav-item {
+    margin-top: 16px !important;
+}
+
 .nav-link {
-    /* Default navbar link color */
     color: #444;
-    /* Smooth color change */
     transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    /* Hover color to match hero theme */
     color: #8b6cff;
 }
 
 .nav-link.active {
-    /* Purple pill background for active page */
     background-color: #8b6cff;
-    /* White text on active pill */
     color: #fff !important;
-    /* Rounded pill shape */
     border-radius: 999px;
-    /* Extra padding so pill looks like a button */
     padding-inline: 1.25rem;
 }
 
 .nav-link.home{
-    background-color: #f7f6f8;
+    background-color: #f6f7f8;
     color: #333;
     border: 2px solid #e5e5e5;
     border-radius: 999px;
@@ -55,7 +59,7 @@
     object-fit: cover;
 }
 
-.btn-primary-custom {
+.btn-resume {
     background-color: #fff;
     color: #333;
     border: 2px solid #e5e5e5;
@@ -63,7 +67,7 @@
     transition: all 0.3s ease;
 }
 
-.btn-primary-custom:hover {
+.btn-resume:hover {
     background-image: linear-gradient(90deg, #d46aff, #8b6cff);
     color: #fff;
     border-color: transparent;
@@ -71,16 +75,91 @@
     transform: translateY(-2px);
 }
 
-.btn-secondary-custom {
+.btn-linkedin {
     background-color: #0A66C2;
     color: #fff;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-.btn-secondary-custom:hover {
+.btn-linkedin:hover {
     background-image: linear-gradient(90deg, #0A66C2, #8b6cff);
     color: #fff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
+
+@media (min-width: 768px) {
+    .btn-linkedin {
+        margin-left: 75px;
+        margin-bottom: 80px;
+    }
+}
+.btn-github {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+    background-image: linear-gradient(90deg, #8795a0, #877d7d);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.about-bubble {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 220, 255, 0.55));
+    padding: 2.5rem 2rem;
+    border-radius: 35px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    margin-bottom: 3rem;
+}
+@media (min-width: 992px) {
+    .about-bubble {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+.tech-grid {
+    margin-left: 0;
+    margin-top: 1rem;
+}
+
+
+.tech-grid {
+    max-width: 360px;
+    padding-left: 0;
+
+}
+
+.tech-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.tech-icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.tech-grid .col-4 {
+    padding-top: 0.1rem;
+    padding-bottom: 0.3rem;
+}
+
+
+
