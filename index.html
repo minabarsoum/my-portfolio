@@ -20,12 +20,12 @@
                     <svg class="bi me-2" width="40" height="32" aria-hidden="true">
                         <use xlink:href="#bootstrap"></use>
                     </svg> 
-                    <span class="section-pill">Welcome</span>
+                    <span style="color: white; font-size: 40px; font-weight: bold;">Welcome</span>
                 </a>
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#" class="nav-link home" aria-current="page">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link about">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link contact">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link contact">Contact</a></li>
                 </ul>
             </header>
         </div>
@@ -73,18 +73,18 @@
                     <!-- left col -->
                     <div class="about-blurb mt-4">
                         <div class="">
-                            <div class="row g-4">
+                            <div class="row g-4 align-items-stretch">
                                     <div class="col-md-6">
                                         <div class="about-bubble">
-                                            <h3 class="h5 mb-3"><em>Education:</em></h3>
+                                            <h3 class="h5 text-center"><em>Education:</em></h3>
                                             <ul class="list-unstyled mb-4">
-                                                <li><strong>Computer Science, Creative Writing</strong> – Rutgers University</li>
-                                                <li>Graduated: 2021</li>
+                                                <li>Rutgers University - Class of 2021</li>
+                                                <li><em>B.S. - Computer Science</em></li>
                                             </ul>
 
-                                            <h3 class="h5 mb-3"><em>Technical Skills:</em></h3>
+                                            <h3 class="h5 text-center mb-2"><em>Technical Skills:</em></h3>
                                             <div class="row justify-content-start tech-grid">
-
+                                                <!-- row 1 -->
                                                 <div class="col-4 col-sm-3 col-md-4 text-center mb-3">
                                                     <div class="tech-name">HTML</div>
                                                     <img src="./img/hmtl logo.png" class="tech-icon-img" alt="HTML">
@@ -100,7 +100,7 @@
                                                     <img src="./img/JavaScript-logo.png" class="tech-icon-img" alt="JavaScript">
                                                 </div>
                                 
-                                                <!-- Row 2 -->
+                                                <!-- row 2 -->
                                                 <div class="col-4 col-sm-3 col-md-4 text-center mb-3">
                                                     <div class="tech-name">Java</div>
                                                     <img src="./img/java logo.PNG" class="tech-icon-img" alt="Java">
@@ -122,14 +122,14 @@
                                     <div class="col-md-6">
                                         <div class="about-bubble">
                                     
-                                            <h3 class="h5 mb-3"><em>Employment:</em></h3>
+                                            <h3 class="h5 text-center"><em>Employment:</em></h3>
                                             <ul class="list-unstyled mb-4">
                                                 <li><strong>Bloomberg LP</strong> – Data Analyst </li>
                                                 <li><strong>FINRA</strong> - Technology Intern</li>
 
                                             </ul>
                                     
-                                            <h3 class="h5 mb-3"><em>Personal Interests:</em></h3>
+                                            <h3 class="h5 text-center mb-3"><em>Personal Interests:</em></h3>
                                             <ul class="list-unstyled">
                                                 <li>Gym</li>
                                                 <li>Muay Thai</li>
@@ -147,6 +147,39 @@
                         <!-- insert here -->
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+        
+                <div class="contact-pill">Contact me</div>
+                <p class="contact-subtitle">
+                    I am interested in any new opportunities.
+                </p>
+        
+                <form class="contact-form">
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control form-control-custom" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-custom" placeholder="Email">
+                        </div>
+        
+                        <div class="col-12">
+                            <input type="text" class="form-control form-control-custom" placeholder="Subject">
+                        </div>
+        
+                        <div class="col-12">
+                            <textarea class="form-control form-control-custom" rows="6" placeholder="Message"></textarea>
+                        </div>
+        
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-contact-outline">SEND</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </section>
