@@ -8,13 +8,14 @@
     display: inline-block;
     padding: 14px 40px;
     border-radius: 50px;
-    background: linear-gradient(90deg, #ff6cfd 0%, #eccdf2 100%);
+    background: linear-gradient(90deg, #ff6cfd 0%, #ff6cfd 100%);
     font-size: 1.7rem;
     font-weight: 700;
     color: white;
     backdrop-filter: blur(2px);
     box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
 }
+
 
 .nav-item {
     margin-top: 16px !important;
@@ -51,6 +52,13 @@
     border-color: transparent;
     box-shadow: 0 1px 7px rgb(247, 247, 247);
     transform: translateY(-2px);
+}
+
+#rotating-text {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .hero-img {
@@ -188,9 +196,8 @@
     font-weight: 700;
     color: white;
     text-align: center;
-    background: linear-gradient(90deg, #ff6cfd 0%, #eccdf2 100%);
+    background: linear-gradient(90deg, #ff6cfd 0%, #ff6cfd 100%);
     backdrop-filter: blur(6px);
-    box-shadow: 0 10px 35px rgba(90, 130, 246, 0.25);
 }
 
 .contact-subtitle {

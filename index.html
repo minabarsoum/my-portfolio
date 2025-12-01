@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+<!-- js for rotating text -->
 
 <body>
     <section id="page" class="gradient-background">
@@ -37,7 +38,7 @@
                     <div class="col-lg-6">
                         <p class="fs-2 mb-3" style="color:#ffffff"> I'm</p>
                         <h1 class="display-5 fw-bold mb-4" style="color:#fa68ff">Mina Barsoum</h1>
-                        <p class="fs-3 mb-5" style="color:#ffffff">Web Developer and Content Creator </p>
+                        <p class="fs-3 mb-5"><span id="rotating-text"></span></p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
                             <a href="./files/Mina Barsoum Web.pdf" download class="btn btn-resume btn-lg px-4 me-md-2" target="_blank">
                                 <i class="bi bi-file-earmark-person me-2"></i>Resume
@@ -183,5 +184,44 @@
             </div>
         </section>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const roles = [
+                "Web Developer",
+                "Content Creator",
+                "Data Analyst",
+                "Ex-Bloomberg"
+            ];
+
+            const el = document.getElementById("rotating-text");
+            let index = 0;
+
+            function fadeInText() {
+                el.style.opacity = 1;
+            }
+
+            function fadeOutText(callback) {
+                el.style.opacity = 0;
+                setTimeout(callback, 800); // matches CSS fade duration
+            }
+
+            function updateText() {
+                fadeOutText(() => {
+                    el.textContent = roles[index];
+                    fadeInText();
+                    index = (index + 1) % roles.length;
+                });
+            }
+
+            // start with first text
+            el.textContent = roles[0];
+            fadeInText();
+
+            // cycle every 2.5 seconds
+            setInterval(updateText, 2500);
+        });
+    </script>
 </body>
 </html>
