@@ -54,6 +54,8 @@
     transform: translateY(-2px);
 }
 
+
+
 #rotating-text {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
@@ -76,8 +78,21 @@
     transition: all 0.3s ease;
 }
 
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 16px 20px;
+    margin-top: 1.5rem;
+}
+/* keeps one column on small screeens */
+@media (max-width: 575px) {
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .btn-resume:hover {
-    background-image: linear-gradient(90deg, #ff7c1e, #c87623);
+    background-image: linear-gradient(90deg, #ff7c1e, #f69b40);
     color: #fff;
     border-color: transparent;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -92,18 +107,12 @@
 }
 
 .btn-linkedin:hover {
-    background-image: linear-gradient(90deg, #0A66C2, #ff7c1e);
+    background-image: linear-gradient(90deg, #0A66C2, #4ea2f7);
     color: #fff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
 
-@media (min-width: 768px) {
-    .btn-linkedin {
-        margin-left: 75px;
-        margin-bottom: 80px;
-    }
-}
 .btn-github {
     background-color: #fff;
     color: #333;

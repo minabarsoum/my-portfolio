@@ -33,23 +33,23 @@
         <!-- Title -->
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-between">
-                <div class="col-10 col-sm-8 col-lg-6 d-flex justify-content-end"> 
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
                     <img src="./img/IMG_054780.jpg" class="hero-img" alt="Mina Barsoum" height="500"> </div>
-                    <div class="col-lg-6">
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
                         <p class="fs-2 mb-3" style="color:#ffffff"> I'm</p>
                         <h1 class="display-5 fw-bold mb-4" style="color:#ff7c1e">Mina Barsoum</h1>
                         <p class="fs-3 mb-5"><span id="rotating-text"></span></p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+                        <div class="action-grid"> 
                             <a href="./files/Mina Barsoum Web.pdf" download class="btn btn-resume btn-lg px-4 me-md-2" target="_blank">
                                 <i class="bi bi-file-earmark-person me-2"></i>Resume
                             </a>
-                            <a href="https://github.com/minabarsoum" target="_blank" class="btn btn-github btn-lg px-4 me-md-2">
-                                <i class="bi bi-github me-2"></i>Github
-                            </a>
-                        </div>
-                        <div class="d-grid gap-2 pt-2 mt-4 d-md-flex justify-content-md-start">
+                            <a href="https://minabarsoum.github.io/web-portfolio/" class="btn btn-resume btn-lg px-4 me-md-2" target="_blank">
+                                <i class="bi bi-clipboard-check-fill me-2"></i>Projects</a>
                             <a href="https://www.linkedin.com/in/mina-barsoum/" class="btn btn-linkedin btn-lg px-4 me-md-2" target="_blank">
                                 <i class="bi bi-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="https://github.com/minabarsoum" target="_blank" class="btn btn-github btn-lg px-4 me-md-2">
+                                <i class="bi bi-github me-2"></i>Github
                             </a>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                     <div class="col-md-6">
                                         <div class="about-bubble">
                                             <h3 class="h5 text-center"><em>Education:</em></h3>
-                                            <ul class="list-unstyled mb-4">
+                                            <ul class="list-unstyled text-center mb-4">
                                                 <li>Rutgers University - Class of 2021</li>
                                                 <li><em>B.S. - Computer Science</em></li>
                                             </ul>
@@ -124,14 +124,14 @@
                                         <div class="about-bubble">
                                     
                                             <h3 class="h5 text-center"><em>Employment:</em></h3>
-                                            <ul class="list-unstyled mb-4">
+                                            <ul class="list-unstyled text-center mb-3"">
                                                 <li><strong>Bloomberg LP</strong> – Data Analyst </li>
                                                 <li><strong>FINRA</strong> - Technology Intern</li>
 
                                             </ul>
                                     
-                                            <h3 class="h5 text-center mb-3"><em>Personal Interests:</em></h3>
-                                            <ul class="list-unstyled">
+                                            <h3 class="h5 text-center mt-4 mb-3"><em>Personal Interests:</em></h3>
+                                            <ul class="list-unstyled text-center mb-3">
                                                 <li>Gym</li>
                                                 <li>Muay Thai</li>
                                                 <li>Writing<li>
@@ -204,7 +204,7 @@
 
             function fadeOutText(callback) {
                 el.style.opacity = 0;
-                setTimeout(callback, 800); // matches CSS fade duration
+                setTimeout(callback, 800); 
             }
 
             function updateText() {
@@ -215,11 +215,10 @@
                 });
             }
 
-            // start with first text
+           
             el.textContent = roles[0];
             fadeInText();
-
-            // cycle every 2.5 seconds
+            
             setInterval(updateText, 2500);
         });
     </script>
